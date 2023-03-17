@@ -1,0 +1,38 @@
+.content {
+  .container {
+    border-radius: 45px;
+    background-color: #333333;
+
+    h3 {
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 18px;
+      margin-bottom: 50px;
+    }
+  }
+  &__wrapper {
+    padding: 40px 100px;
+  }
+  .films__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    .film {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      img {
+        border-radius: 45px;
+      }
+      &__title {
+        margin: 0;
+        font-size: 16px;
+        margin-top: 10px;
+      }
+      &__genres {
+        font-size: 16px;
+        margin-top: 10px;
+      }
+    }
+  }
+}

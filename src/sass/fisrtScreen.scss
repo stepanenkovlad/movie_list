@@ -1,0 +1,69 @@
+.firstScreen {
+  height: calc(100vh - 80px);
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 200px;
+  }
+  &__info {
+    margin-top: -80px;
+    width: 560px;
+    h1 {
+      margin: 0;
+      font-weight: 700;
+      font-size: 36px;
+    }
+    p {
+      margin: 0;
+      margin-top: 25px;
+    }
+  }
+  &__btn {
+    font-family: "Raleway", sans-serif;
+    -webkit-appearance: button;
+    font-weight: 400;
+    margin-top: 25px;
+    width: 260px;
+    height: 60px;
+    // background: #b52e2e;
+    background: #746868;
+    border: none;
+    border-radius: 70px;
+    cursor: pointer;
+    color: $main-color;
+    text-transform: uppercase;
+    transition: all 0.3s;
+    &:hover {
+      background: #342f2f;
+    }
+  }
+  &__images {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    img {
+      height: 90%;
+      // height: 550px;
+      width: auto;
+      border-radius: 20px;
+    }
+    div {
+      &:before {
+        content: "";
+        width: 90%;
+        height: 65%;
+        display: block;
+        position: absolute;
+        top: 17.5%;
+        left: -25%;
+        background: rgba(217, 217, 217, 0.5);
+        mix-blend-mode: normal;
+        filter: blur(50px);
+        z-index: -1;
+        border-radius: 100%;
+      }
+    }
+  }
+}
